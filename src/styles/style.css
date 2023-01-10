@@ -26,6 +26,8 @@
   --blue: #1085c5;
 }
 
+
+
 .h{
   line-height: 1.2em;
 }
@@ -42,10 +44,10 @@ h3{
   font-size: 34px;
 }
 
-.container {
-  width: 100%; // Ширина контейнера 100%
-  max-width: 1110px; // Ширина контента
-  padding-top: 100px; // Отступ
-  padding-bottom: 100px; // Отступ
-  margin: 0 auto; // Расположение контейнера посередине
+.container{
+  width: 100%;
+  max-width: 1110px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin: 0 auto;
 }
