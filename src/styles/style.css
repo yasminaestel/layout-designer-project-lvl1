@@ -49,6 +49,8 @@ h3{
   margin: 0 auto;
 }
 
-header{
+.img-background{
   background-image: url("../../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
