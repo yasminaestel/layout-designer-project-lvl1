@@ -1,16 +1,16 @@
 /** CSS STYLE **/
 
-@font-face{
+@font-face {
   font-family: "Open Sans";
   src: url("Fonts/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
-@font-face{
+@font-face {
   font-family: "Neucha";
   src: url("Fonts/Neucha-Regular.ttf");
 }
 
-:root{
+:root {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1.6em;
@@ -25,24 +25,26 @@
   --brown: #b09a81;
   --blue: #1085c5;
 }
-.h{
+
+.h {
   line-height: 1.2em;
   font-family: "Neucha";
+  margin: 0cm;
 }
 
-h1{
+h1 {
   font-size: 72px;
 }
 
-h2{
+h2 {
   font-size: 60px;
 }
 
-h3{
+h3 {
   font-size: 34px;
 }
 
-.container{
+.container {
   width: 100%;
   max-width: 1110px;
   padding-top: 100px;
@@ -50,19 +52,19 @@ h3{
   margin: 0 auto;
 }
 
-.img-background{
+.img-background {
   position: relative;
   background: var(--white);
   overflow: hidden;
 }
 
-.img-background header{
+.img-background header {
   position: relative;
   z-index: 2;
 }
 
-.img-background::before{
-  content: ' ';
+.img-background::before {
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -76,21 +78,33 @@ h3{
   opacity: 0.1;
 }
 
-.orange{
+.orange {
   color: var(--basic);
 }
 
-.img-1{
+.img-1 {
   width: 525px;
   height: auto;
   top: 55px;
   right: 270px;
+  margin: 0cm;
 }
 
-.possition-relative{
+.possition-relative {
   position: relative;
 }
 
-.possition-absolute{
+.possition-absolute {
   position: absolute;
+}
+
+.columns-2 {
+  display: block;
+  column-count: 2;
+  column-gap: 30px;
+  column-width: auto;
+}
+
+.columns-2 p {
+  margin-top: 0;
 }
