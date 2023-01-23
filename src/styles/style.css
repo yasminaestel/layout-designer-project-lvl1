@@ -10,11 +10,9 @@
   src: url("./Fonts/Neucha-Regular.ttf");
 }
 
+/** root **/
+
 :root {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
-  color: var(--dark);
   --white: #fff;
   --trans-white: #d7ccc0;
   --light: #f5f4f0;
@@ -24,12 +22,61 @@
   --trans-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--dark);
+  background-color: var(--light);
 }
+
+body {
+  margin: 0;
+}
+/** containers **/
+
+.container {
+  max-width: 1110px;
+  top: 100px;
+  bottom: 100px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.orange {
+  color: var(--basic);
+}
+
+/** img **/
+
+.img-background::before {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.1;
+
+  content: "";
+}
+
+.img-1 {
+  top: -55px;
+  right: -270px;
+  height: 525px;
+  width: auto;
+}
+
+/** h **/
 
 .h {
   line-height: 1.2em;
   font-family: "Neucha";
-  margin: 0cm;
+  font-weight: normal;
+  margin: 0;
 }
 
 h1 {
@@ -43,51 +90,21 @@ h2 {
 h3 {
   font-size: 34px;
 }
+ 
+/** columns **/
 
-.container {
-  width: 100%;
-  max-width: 1110px;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  margin: 0 auto;
+.columns {
+  columns: 2;
+  gap: 30px;
+  top: 539px;
+  column-width: auto;
 }
 
-.img-background {
-  position: relative;
-  overflow: hidden;
+.columns p{
+  margin: 0;
 }
 
-.img-background header {
-  position: relative;
-  z-index: 2;
-}
-
-.img-background::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-image: url(../images/background.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.1;
-}
-
-.orange {
-  color: var(--basic);
-}
-
-.img-1 {
-  width: 525px;
-  height: auto;
-  top: 55px;
-  right: 270px;
-  margin: 0cm;
-}
+/**possition**/
 
 .possition-relative {
   position: relative;
@@ -97,14 +114,21 @@ h3 {
   position: absolute;
 }
 
-.columns-2 {
+/** bottom **/
+
+.btn {
   display: block;
-  column-count: 2;
-  column-gap: 30px;
-  column-width: auto;
+  width: 148px;
+  height: 49px;
+  border: none;
 
-}
+  color: var(--white);
+  font-weight: bold;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
 
-.columns-2 p {
-  margin-top: 0;
+  background-color: var(--basic);
+  cursor: pointer;
 }
