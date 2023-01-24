@@ -37,7 +37,6 @@ a {
 
 body {
   overflow-x: hidden;
-
   color: var(--dark);
   font-weight: 400;
   font-size: 16px;
@@ -49,7 +48,6 @@ h1,
 h2,
 h3 {
   z-index: 1;
-
   color: var(--basic);
   font-weight: 400;
   font-family: Neucha, sans-serif;
@@ -76,53 +74,42 @@ h3 {
   color: var(--dark);
 }
 
-.mt-2 {
-  margin-top: 16px;
-}
-
-.bg-image {
+.img-background {
   position: relative;
 }
 
-.bg-image::before {
+.img-background::before {
   position: absolute;
-
   width: 100%;
   height: 100%;
-
   background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-
   opacity: 0.1;
-
   content: "";
 }
 
-.section {
+.container {
   position: relative;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   max-width: 1110px;
   min-height: 700px;
-
   margin: 0 auto;
   padding: 100px 0;
 }
 
-.text-col-2 {
+.columns {
   display: flex;
   gap: 30px;
 }
 
-.text-col {
+.column {
   flex-basis: 50%;
 }
 
-.text-col p {
+.column p {
   margin-bottom: 1.6em;
 }
 
@@ -131,7 +118,7 @@ header {
   background-color: var(--light);
 }
 
-.header-image {
+.img-1 {
   position: absolute;
   top: 55px;
   right: -270px;
