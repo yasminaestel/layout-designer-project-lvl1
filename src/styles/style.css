@@ -135,3 +135,25 @@ header {
 
   cursor: pointer;
 }
+
+/*section-1*/
+
+.center {
+  text-align: center;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.video-1 {
+  position: absolute;
+  display: block;
+  bottom: -100px;
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  filter: drop-shadow(0 16px 32px #00000026);
+}
