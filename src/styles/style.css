@@ -10,6 +10,8 @@
   src: url("./Fonts/Neucha-Regular.ttf");
 }
 
+/*body*/
+
 :root {
   --white: #fff;
   --trans-white: #d7ccc0;
@@ -22,18 +24,10 @@
   --blue: #1085c5;
 }
 
-/* RESET */
-
 * {
   margin: 0;
   padding: 0;
 }
-
-a {
-  text-decoration: none;
-}
-
-/* COMMON */
 
 body {
   overflow-x: hidden;
@@ -43,6 +37,31 @@ body {
   font-family: OpenSans, sans-serif;
   line-height: 1.6em;
 }
+
+a {
+  text-decoration: none;
+}
+
+.font-dark {
+  color: var(--dark);
+}
+
+.font-white {
+  color: var(--white);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1110px;
+  min-height: 700px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+/*h*/
 
 h1,
 h2,
@@ -70,9 +89,11 @@ h3 {
   height: 100%;
 }
 
-.dark {
-  color: var(--dark);
+.top-100 {
+  top: 100px;
 }
+
+/*background*/
 
 .img-background {
   position: relative;
@@ -89,15 +110,20 @@ h3 {
   content: "";
 }
 
-.container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  max-width: 1110px;
-  min-height: 700px;
-  margin: 0 auto;
-  padding: 100px 0;
+.background-white {
+  background-color: var(--white);
+}
+
+/*header*/
+
+header {
+  background-color: var(--light);
+}
+
+.img-1 {
+  position: absolute;
+  top: 55px;
+  right: -270px;
 }
 
 .columns {
@@ -111,17 +137,6 @@ h3 {
 
 .column p {
   margin-bottom: 1.6em;
-}
-
-/* HEADER */
-header {
-  background-color: var(--light);
-}
-
-.img-1 {
-  position: absolute;
-  top: 55px;
-  right: -270px;
 }
 
 .btn {
@@ -156,4 +171,35 @@ header {
   margin-left: auto;
   text-align: center;
   filter: drop-shadow(0 16px 32px #00000026);
+}
+
+/*navigator*/
+
+#navigator {
+  background-color: var(--basic-dark);
+}
+
+#navigator h2 {
+  font-size: 52px;
+}
+
+#navigator h1 {
+  font-size: 64px;
+  margin-bottom: 40px;
+  line-height: 1;
+  color: var(--basic-dark);
+}
+
+.nav {
+  display: block;
+  height: 323px;
+  width: 350px;
+  padding: 24px;
+  margin: 30px;
+  margin-bottom: 20px;
+}
+
+.flex {
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
