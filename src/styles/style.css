@@ -192,13 +192,24 @@ main .container {
   font-size: 64px;
   margin-bottom: 40px;
   line-height: 1;
+}
+
+.number {
   color: var(--basic-dark);
 }
 
-#navigator h3 {
+a:hover .number {
+  color: var(--white);
+}
+
+.title {
   width: 302px;
   left: calc(50% - 302px/2);
   margin-bottom: 16px;
+}
+
+a:hover .title {
+  color: var(--white);
 }
 
 #navigator p {
@@ -210,6 +221,10 @@ main .container {
 #navigator .container {
   padding-bottom: 200px;
   top: 100px;
+}
+
+.nav:hover {
+  background-color: var(--basic);
 }
 
 .nav {
@@ -230,4 +245,12 @@ main .container {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+a p {
+  color: var(--dark);
+}
+
+a:hover p {
+  color: var(--white);
 }
