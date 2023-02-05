@@ -1,7 +1,6 @@
 /*font*/
 
 @font-face {
-  font-weight: 400;
   font-family: OpenSans;
   src: url("./Fonts/OpenSans-VariableFont_wdth\,wght.ttf");
 }
@@ -150,7 +149,7 @@ h3 {
 
 /*header*/
 
-.img-1 {
+.img-header {
   position: absolute;
   top: 55px;
   right: -270px;
@@ -253,4 +252,50 @@ a p {
 
 a:hover p {
   color: var(--white);
+}
+
+/*ikea-effect*/
+
+.text-cognitive-distortions {
+  font-family: Neucha, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--trans-dark);
+}
+
+#ikea-effect h2 {
+  color: var(--dark);
+  margin-bottom: 30px;
+}
+
+#ikea-effect h5 {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--white);
+  background-color: var(--brown);
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 100px;
+  margin-top: 20px;
+}
+
+.description-distortion {
+  font-family: Neucha, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 41px;
+}
+
+.img-ikea-effect {
+  width: 578px;
+  height: 434px;
+  margin-right: 30px;
+}
+
+.description-section {
+  justify-content: left;
 }
