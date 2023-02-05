@@ -1,3 +1,5 @@
+/*font*/
+
 @font-face {
   font-weight: 400;
   font-family: OpenSans;
@@ -8,6 +10,18 @@
   font-weight: 400;
   font-family: Neucha;
   src: url("./Fonts/Neucha-Regular.ttf");
+}
+
+.font-dark {
+  color: var(--dark);
+}
+
+.font-white {
+  color: var(--white);
+}
+
+.font-basic-dark {
+  color: var(--basic-dark);
 }
 
 /*body*/
@@ -42,14 +56,6 @@ a {
   text-decoration: none;
 }
 
-.font-dark {
-  color: var(--dark);
-}
-
-.font-white {
-  color: var(--white);
-}
-
 .container {
   position: relative;
   display: flex;
@@ -59,6 +65,22 @@ a {
   min-height: 700px;
   margin: 0 auto;
   padding: 100px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.padding-top-0 {
+  padding-top: 0;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
 }
 
 /*h*/
@@ -90,18 +112,6 @@ h3 {
   height: 100%;
 }
 
-.center {
-  text-align: center;
-}
-
-.margin-bottom-30 {
-  margin-bottom: 30px;
-}
-
-.padding-top-0 {
-  padding-top: 0;
-}
-
 /*background*/
 
 .img-background {
@@ -123,17 +133,7 @@ h3 {
   background-color: var(--light);
 }
 
-/*header*/
-
-header {
-  background-color: var(--light);
-}
-
-.img-1 {
-  position: absolute;
-  top: 55px;
-  right: -270px;
-}
+/*columns*/
 
 .columns {
   display: flex;
@@ -148,6 +148,14 @@ header {
   margin-bottom: 1.6em;
 }
 
+/*header*/
+
+.img-1 {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+}
+
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -160,7 +168,7 @@ header {
   cursor: pointer;
 }
 
-/*section-1*/
+/*section-video*/
 
 .video-1 {
   position: absolute;
@@ -174,11 +182,7 @@ header {
   filter: drop-shadow(0 16px 32px #00000026);
 }
 
-main .container {
-  padding-bottom: 0;
-}
-
-/*navigator*/
+/*section-navigator*/
 
 #navigator {
   background-color: var(--basic-dark);
@@ -194,21 +198,17 @@ main .container {
   line-height: 1;
 }
 
-.number {
-  color: var(--basic-dark);
-}
-
-a:hover .number {
+a:hover .font-basic-dark {
   color: var(--white);
 }
 
-.title {
+.title-card {
   width: 302px;
   left: calc(50% - 302px/2);
   margin-bottom: 16px;
 }
 
-a:hover .title {
+a:hover .title-card {
   color: var(--white);
 }
 
