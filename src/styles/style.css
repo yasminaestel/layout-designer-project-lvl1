@@ -132,6 +132,10 @@ h3 {
   background-color: var(--light);
 }
 
+.background-brown {
+  background-color: var(--brown);
+}
+
 /*columns*/
 
 .columns {
@@ -187,11 +191,11 @@ h3 {
   background-color: var(--basic-dark);
 }
 
-#navigator h2 {
+.h2-navigator {
   font-size: 52px;
 }
 
-#navigator h1 {
+.h1-navigator {
   font-size: 64px;
   margin-bottom: 40px;
   line-height: 1;
@@ -211,7 +215,7 @@ a:hover .title-card {
   color: var(--white);
 }
 
-#navigator p {
+.p-navigator {
   width: 302px;
   left: calc(50% - 302px/2);
   line-height: 160%;
@@ -265,12 +269,12 @@ a:hover p {
   color: var(--trans-dark);
 }
 
-#ikea-effect h2 {
+.h2-section-light {
   color: var(--dark);
   margin-bottom: 30px;
 }
 
-#ikea-effect h5 {
+.h5-section-light {
   font-weight: 700;
   font-size: 14px;
   color: var(--white);
@@ -279,7 +283,7 @@ a:hover p {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-top: 100px;
-  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .description-distortion {
@@ -290,7 +294,7 @@ a:hover p {
   line-height: 41px;
 }
 
-.img-ikea-effect {
+.img-section-light {
   width: 578px;
   height: 434px;
   margin-right: 30px;
@@ -299,3 +303,34 @@ a:hover p {
 .description-section {
   justify-content: left;
 }
+
+/*premature-optimization*/
+
+.h2-section-brown {
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.h5-section-brown {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--brown);
+  background-color: var(--white);
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+#premature-optimization .text-cognitive-distortions {
+  color: #D7CCC0;
+}
+
+.img-section-brown {
+  width: 578px;
+  height: 434px;
+  margin-left: 30px;
+}
+
+/*distortion-of-novelty*/
